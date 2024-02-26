@@ -20,19 +20,7 @@
     border-radius: 8px;
   }
 
-  /* Media query for responsiveness */
-  @media (max-width: 768px) {
-    .todos-grid {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-  }
-
-  @media (max-width: 480px) {
-    .todos-grid {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
-  }
-
+  
   .clock-label {
     display: flex;
     border-radius: 0.5rem;
@@ -69,4 +57,22 @@ h1{
 
   .contact-info {
     font-size: 14px;
+  }
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .todos-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  h1, .footer{
+    display: none;
+  }
+
+  @media (max-width: 480px) {
+    .todos-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
+  h1, .footer{
+    display: none;
   }
