@@ -32,3 +32,41 @@
       grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
   }
+
+  .clock-label {
+    display: flex;
+    border-radius: 0.5rem;
+    width: 300px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: cadetblue;
+    font-weight: bolder;
+    justify-content: center;
+    padding:1%;
+    margin: auto;
+    border: 3px solid green;
+  }
+h1{
+    display: flex;
+    border-radius: 0.5rem;
+    width: 100%;
+    gap:20px;
+    font-size: 33px;
+    margin-top: 20px;
+    background-color: cadetblue;
+    font-weight: bolder;
+    justify-content: center;
+    padding:1%;
+    margin: auto;
+    border: 3px solid green;
+}
+
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }

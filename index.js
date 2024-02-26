@@ -1,4 +1,12 @@
+// Function to update the clock label
+function updateClock() {
+    const clockLabel = document.getElementById('clockLabel');
+    const currentTime = new Date();
+    const formattedTime = currentTime.toLocaleTimeString();
+    clockLabel.textContent = `Current Time: ${formattedTime}`;
+  }
 document.addEventListener('DOMContentLoaded', function () {
+    setInterval(updateClock,1000);
     fetch('https://jsonplaceholder.typicode.com/todos')
       .then(response => response.json())
       .then(todos => {
@@ -22,3 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .catch(error => console.error('Error fetching todos:', error));
   });
+  
