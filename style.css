@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.todos-grid
+{
+    display: grid;
+    margin: 10%;
+    padding:0.5rem;
+    background-color: bisque;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+  .todo-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .todos-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .todos-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
